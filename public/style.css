@@ -1,0 +1,26 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: helvetica, arial, sans-serif;
+  margin: 25px;
+}
+
+form input, form label, form textarea {
+  display: block;
+}
+
+#search .search-bar, #search_results, #none_found {
+    display: none;
+}
+
+#search_results table {
+    cellSpacing: 2px;
+    cellPadding: 2px;
+}
+
+#search_results table, #search_results tr, #search_results td {
+    border: solid black 1px;
+    border-collapse: collapse;
+}

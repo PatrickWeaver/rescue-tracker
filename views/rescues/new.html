@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HarveySOS</title>
+    <meta name="description" content="">
+    <link id="favicon" rel="icon" href="https://glitch.com/edit/favicon-app.ico" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+    <header>
+      <h1>
+        HarveySOS
+      </h1>
+    </header>
+
+    <main>
+      <ul>
+        
+      </ul>
+      <p>Help Out: <a href="https://harveyrelief.slack.com">https://harveyrelief.slack.com</a></p>
+      
+      <form id="new-rescue-form" action="/rescues/new" method="post" enctype="application/json">
+        <h4>
+          Location:
+        </h4>
+        <label>Street Address:</label>
+        <input type="text" name="streetAddress" id="streetAddress">
+        <label>Apartment:</label>
+        <input type="text" name="apartment" id="apartment">
+        <label>City:</label>
+        <input type="text" name="city" id="city">
+        <label>Zip Code:</label>
+        <input type="text" name="zipCode" id="zipCode">
+        <label>Latitude Coordinate (if known):</label>
+        <input type="text" name="latCoord" id="latCoord">
+        <label>Longitude Coordinate (if known):</label>
+        <input type="text" name="longCoord" id="longCoord">
+        <label>Location Comments ("on roof", "street flooded" . . .)</label>
+        <textarea name="locationComments" id="locationComments"></textarea>
+        <h4>
+          Contact Info:
+        </h4>
+        <label>Names:</label>
+        <input type="text" name="names" id="names">
+        <label>Phone Number</label>
+        <input type="tel" name="phoneNumber" id="phoneNumber">
+        <label>Twitter Handle:</label>
+        <input type="text" name="twitterHandle" id="twitterHandle">
+        <label>Facebook Post Link:</label>
+        <input type="text" name="facebookPost" id="facebookPost">
+        <h4>
+          Other Information:
+        </h4>
+        <label>Number of People</label>
+        <input type="number" name="numberOfPeople" id="numberOfPeople">
+        <label>Special Considerations</label>
+        <textarea name="specialConsiderations" id="specialConsiderations"></textarea>
+        <label>Number of Pets:</label>
+        <input type="number" name="petsNumber" id="petsNumber">
+        <label>Type of Pets:</label>
+        <input type="text" name="petsType" id="petsType">
+        <label>Other Comments:</label>
+        <textarea name="otherComments" id="otherComments"></textarea>
+        <button type="submit" value="Submit">
+          Submit
+        </button>
+      </form>
+    </main>
+
+    <!-- Your web-app is https, so your scripts need to be too -->
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"
+            integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="
+            crossorigin="anonymous"></script>
+    <script src="/client.js"></script>
+
+  </body>
+</html>
